@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI PES Statement Generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>AI PES Statement Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="pes-gen-form">
           <input
             type="text"
             placeholder="Enter the problem, diagnosis and signs and symptoms"
@@ -23,7 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="pes-state">The PES statement will go here</div>
+        <div class="pes-state" id="generated-pes"></div>
       </main>
 
       <footer>
