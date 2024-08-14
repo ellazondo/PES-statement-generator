@@ -14,18 +14,21 @@
         <h1>AI PES Statement Generator</h1>
       </header>
       <main>
-        <form id="pes-gen-form">
-          <input
-            type="text"
-            placeholder="Enter the problem, diagnosis and signs and symptoms"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="pes-gen-form">
+            <input
+              type="text"
+              placeholder="Enter the diagnosis and signs and symptoms"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small> i.e.: slowed weight gain, undergoing a tube wean .</small>
+        </div>
         <div class="pes-state" id="generated-pes"></div>
       </main>
 
